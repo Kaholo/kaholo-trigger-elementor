@@ -1,0 +1,22 @@
+{
+  "name": "ElementorTrigger",
+  "type": "trigger",
+  "execProgram": "node",
+  "main": "app.js",
+  "exposeRoute": true,
+  "imgUrl": "icon.png",
+  "version": "1.1.0",
+  "description": "Handle elementor webhooks request",
+  "methods": [{
+    "name": "formSubmit",
+    "route": "post /webhook/elementor/form",
+    "viewName": "Form Action After Submit",
+    "params": [
+      {
+        "name": "formId",
+        "viewName": "Form name or ID",
+        "type": "string"
+      }
+    ]
+  }]
+}
